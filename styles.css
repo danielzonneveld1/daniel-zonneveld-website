@@ -356,20 +356,13 @@ main > section {
 
 /* ---------- THESIS ---------- */
 .thesis__card {
-  background: var(--cream-2);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='340'%3E%3Cg fill='none' stroke='%23c1502e' stroke-width='1.5' opacity='0.14'%3E%3Ccircle cx='340' cy='0' r='90'/%3E%3Ccircle cx='340' cy='0' r='160'/%3E%3Ccircle cx='340' cy='0' r='230'/%3E%3C/g%3E%3C/svg%3E") top right / 260px no-repeat,
+    var(--cream-2);
   border-radius: var(--radius);
   padding: clamp(2rem, 5vw, 3.2rem);
   position: relative;
   overflow: hidden;
-}
-
-.thesis__card::before {
-  content: "🚘";
-  position: absolute;
-  right: clamp(1rem, 4vw, 3rem);
-  top: clamp(1rem, 4vw, 2rem);
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  opacity: 0.5;
 }
 
 .thesis__eyebrow {
