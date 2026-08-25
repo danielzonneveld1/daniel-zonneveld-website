@@ -173,19 +173,25 @@ main > section {
   border: 6px solid var(--cream-2);
 }
 
-.sparkle {
+.corner-mark {
   position: absolute;
+  width: 34px;
+  height: 34px;
   color: var(--rust);
-  font-size: 1.6rem;
-  animation: twinkle 2.6s ease-in-out infinite;
+  transform-origin: center;
+  animation: pulseMark 2.6s ease-in-out infinite;
 }
 
-.sparkle--1 { top: -14px; right: 8%; animation-delay: 0.3s; }
-.sparkle--2 { bottom: 6%; left: -18px; font-size: 1.1rem; color: var(--sage); animation-delay: 1.1s; }
+.corner-mark--tr { top: -13px; right: -13px; }
+.corner-mark--bl { bottom: -13px; left: -13px; color: var(--sage); }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.4; transform: scale(0.85) rotate(0deg); }
-  50% { opacity: 1; transform: scale(1.15) rotate(12deg); }
+@keyframes pulseMark {
+  0%, 100% { transform: scale(0.94); opacity: 0.45; }
+  50% { transform: scale(1.16); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corner-mark { animation: none; opacity: 1; transform: scale(1); }
 }
 
 /* ---------- BUTTONS ---------- */
