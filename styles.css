@@ -179,7 +179,7 @@ main > section {
   height: 34px;
   color: var(--rust);
   transform-origin: center;
-  animation: pulseMark 1.8s ease-out infinite;
+  animation: pulseMark 1.8s ease-in-out infinite;
 }
 
 .corner-mark--tr { top: -13px; right: -13px; }
@@ -187,8 +187,8 @@ main > section {
 
 @keyframes pulseMark {
   0% { transform: scale(0.9); opacity: 0.4; }
-  12% { transform: scale(1.28); opacity: 1; }
-  45% { transform: scale(1.28); opacity: 1; }
+  40% { transform: scale(1.28); opacity: 1; }
+  60% { transform: scale(1.28); opacity: 1; }
   100% { transform: scale(0.9); opacity: 0.4; }
 }
 
