@@ -179,15 +179,17 @@ main > section {
   height: 34px;
   color: var(--rust);
   transform-origin: center;
-  animation: pulseMark 2.6s ease-in-out infinite;
+  animation: pulseMark 1.8s ease-out infinite;
 }
 
 .corner-mark--tr { top: -13px; right: -13px; }
 .corner-mark--bl { bottom: -13px; left: -13px; color: var(--sage); }
 
 @keyframes pulseMark {
-  0%, 100% { transform: scale(0.94); opacity: 0.45; }
-  50% { transform: scale(1.16); opacity: 1; }
+  0% { transform: scale(0.9); opacity: 0.4; }
+  12% { transform: scale(1.28); opacity: 1; }
+  45% { transform: scale(1.28); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.4; }
 }
 
 @media (prefers-reduced-motion: reduce) {
