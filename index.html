@@ -7,9 +7,9 @@
 <meta name="description" content="Daniel Zonneveld: marketing and GTM. Resume, thesis, and a bit about me.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23f7f2ea%22/><text x=%2250%22 y=%2268%22 font-family=%22Georgia,serif%22 font-size=%2242%22 font-weight=%22700%22 fill=%22%23201d1a%22 text-anchor=%22middle%22>DZ</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23fafaf7%22/><text x=%2250%22 y=%2270%22 font-family=%22Arial,sans-serif%22 font-size=%2244%22 font-weight=%22900%22 fill=%22%230a0a0a%22 text-anchor=%22middle%22>DZ</text></svg>">
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
@@ -34,33 +34,30 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__text">
-      <p class="eyebrow">Hi, I&rsquo;m</p>
-      <h1>Daniel<br>Zonneveld<span class="dot">.</span></h1>
-      <p class="hero__tagline">I turn what customers value into strategy, messaging, and growth.</p>
-      <div class="hero__cta">
-        <a href="assets/daniel-zonneveld-resume.pdf" class="btn btn--primary" download>Download Resume</a>
-        <a href="#about" class="btn btn--ghost">More about me ↓</a>
+    <p class="eyebrow">Hi, I&rsquo;m</p>
+    <h1 class="hero__name">Daniel<span class="hero__name-last">Zonneveld<span class="dot">.</span></span></h1>
+    <div class="hero__row">
+      <div class="hero__text">
+        <p class="hero__tagline">I turn what customers value into strategy, messaging, and growth.</p>
+        <div class="hero__cta">
+          <a href="assets/daniel-zonneveld-resume.pdf" class="btn btn--primary" download>Download Resume</a>
+          <a href="#about" class="btn btn--ghost">More about me ↓</a>
+        </div>
+        <div class="hero__meta">
+          <span>🇺🇸 🇳🇱 US &amp; Dutch citizen</span>
+          <span>🗣️ EN · ES · FR</span>
+          <span>📍 San Francisco</span>
+        </div>
       </div>
-      <div class="hero__meta">
-        <span>🇺🇸 🇳🇱 US &amp; Dutch citizen</span>
-        <span>🗣️ EN · ES · FR</span>
-        <span>📍 San Francisco</span>
+      <div class="hero__photo">
+        <img src="assets/headshot.jpg" alt="Portrait of Daniel Zonneveld">
       </div>
-    </div>
-    <div class="hero__photo">
-      <img src="assets/headshot.jpg" alt="Portrait of Daniel Zonneveld">
-      <svg class="corner-mark corner-mark--tr" viewBox="0 0 30 30" aria-hidden="true"><path d="M10,2 H28 V20" stroke="currentColor" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>
-      <svg class="corner-mark corner-mark--bl" viewBox="0 0 30 30" aria-hidden="true"><path d="M2,10 V28 H20" stroke="currentColor" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="section-label">
-      <span>01</span>
-      <h2>About</h2>
-    </div>
+    <h2 class="section-title">About</h2>
     <div class="about__grid">
       <p class="about__lead">I&rsquo;m a marketer who likes building things from zero, whether that&rsquo;s a go-to-market motion, a pipeline of qualified accounts, or a student association that outlived my time running it. I care about understanding what people actually want, then turning that into something clear enough to act on.</p>
       <p>Most recently, I was a Sales Development Rep at Merge API, an AI infrastructure company, where I turned market analysis into pipeline and helped simplify complex product messaging for technical buyers. Before that, I co-owned a branch P&amp;L at Enterprise Mobility, and before <em>that</em>, I founded a student association in Maastricht that grew to 50+ members and ran events that turned a real profit.</p>
@@ -72,19 +69,19 @@
   <section class="stats">
     <div class="stats__grid">
       <div class="stat">
-        <span class="stat__num">$600K+</span>
+        <span class="stat__num" data-prefix="$" data-target="600" data-suffix="K+">$0K+</span>
         <span class="stat__label">Pipeline generated at Merge API</span>
       </div>
       <div class="stat">
-        <span class="stat__num">115%</span>
+        <span class="stat__num" data-target="115" data-suffix="%">0%</span>
         <span class="stat__label">Increase in auxiliary revenue at Enterprise Mobility</span>
       </div>
       <div class="stat">
-        <span class="stat__num">50+</span>
+        <span class="stat__num" data-target="50" data-suffix="+">0+</span>
         <span class="stat__label">Members grown at Mi Casa, Tu Casa</span>
       </div>
       <div class="stat">
-        <span class="stat__num">300+</span>
+        <span class="stat__num" data-target="300" data-suffix="+">0+</span>
         <span class="stat__label">Tickets sold at VIBRA</span>
       </div>
     </div>
@@ -92,10 +89,7 @@
 
   <!-- EXPERIENCE -->
   <section class="experience" id="experience">
-    <div class="section-label">
-      <span>02</span>
-      <h2>Experience</h2>
-    </div>
+    <h2 class="section-title">Experience</h2>
 
     <div class="timeline">
 
@@ -177,10 +171,7 @@
 
   <!-- THESIS -->
   <section class="thesis" id="thesis">
-    <div class="section-label">
-      <span>03</span>
-      <h2>Master&rsquo;s Thesis</h2>
-    </div>
+    <h2 class="section-title">Master&rsquo;s Thesis</h2>
 
     <div class="thesis__card">
       <p class="thesis__eyebrow">Imperial College Business School &middot; MSc Strategic Marketing</p>
@@ -197,26 +188,20 @@
 
   <!-- MORE ABOUT ME -->
   <section class="facts" id="facts">
-    <div class="section-label">
-      <span>04</span>
-      <h2>A Bit About Me</h2>
-    </div>
+    <h2 class="section-title">A Bit About Me</h2>
 
     <div class="facts__grid">
-      <div class="fact-card fact-card--1">
-        <span class="fact-card__icon">🏊</span>
+      <div class="fact-card">
         <h3>Swimmer, off the clock</h3>
         <p>Competed in the 100m freestyle and 100m breaststroke on university teams. Still make time to swim at least three times a week.</p>
       </div>
 
-      <div class="fact-card fact-card--2">
-        <span class="fact-card__icon">🚗</span>
+      <div class="fact-card">
         <h3>Car enthusiast</h3>
         <p>When I&rsquo;m not generating shareholder value, you&rsquo;ll probably find me at a car meet.</p>
       </div>
 
-      <div class="fact-card fact-card--4">
-        <span class="fact-card__icon">🎉</span>
+      <div class="fact-card">
         <h3>Built a community from scratch</h3>
         <p>Founded <strong>Mi Casa, Tu Casa</strong>, a student association in Maastricht that grew to 50+ members. <a href="https://www.instagram.com/micasatucasaum/" target="_blank" rel="noopener">Instagram ↗</a></p>
       </div>
