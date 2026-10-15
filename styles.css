@@ -155,10 +155,17 @@ main > section {
 .hero__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.4rem;
+  align-items: center;
+  gap: 0.7rem;
   font-size: 0.86rem;
   color: var(--ink-soft);
   font-weight: 500;
+}
+
+.hero__meta-sep {
+  color: var(--red);
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
 .hero__photo {
