@@ -480,9 +480,9 @@ main > section {
 
 .fact-card__img {
   display: block;
-  width: calc(100% + 3.2rem);
+  width: 100%;
   height: auto;
-  margin: 1.3rem -1.6rem 0.9rem;
+  margin: 1.3rem 0 0.9rem;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
@@ -498,7 +498,6 @@ main > section {
   .facts__grid { grid-template-columns: 1fr; }
   .fact-card { border-left: none; border-top: 2px solid var(--ink); padding: 1.6rem 0; }
   .fact-card:first-child { border-top: none; }
-  .fact-card__img { width: 100%; margin: 1.3rem 0 0.9rem; }
 }
 
 /* ---------- CONTACT ---------- */
