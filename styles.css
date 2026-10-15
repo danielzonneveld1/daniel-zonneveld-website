@@ -133,7 +133,7 @@ main > section {
   grid-template-columns: 1.3fr 0.7fr;
   gap: clamp(2.5rem, 6vw, 5rem);
   align-items: center;
-  padding-top: clamp(3.5rem, 8vw, 5.5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
   padding-bottom: clamp(3rem, 7vw, 4.5rem);
 }
 
@@ -464,6 +464,15 @@ main > section {
 
 .fact-card:first-child { border-left: none; }
 
+.fact-card__img {
+  display: block;
+  width: calc(100% + 3.2rem);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: -1.8rem -1.6rem 1.2rem;
+  border-bottom: 2px solid var(--ink);
+}
+
 .fact-card h3 {
   font-family: var(--display);
   font-weight: 800;
@@ -478,10 +487,20 @@ main > section {
   font-size: 0.94rem;
 }
 
+.fact-card p + p { margin-top: 0.6rem; }
+
+.fact-card__caption {
+  font-family: var(--serif-accent);
+  font-style: italic;
+  color: var(--red-dark) !important;
+  font-size: 0.92rem !important;
+}
+
 @media (max-width: 700px) {
   .facts__grid { grid-template-columns: 1fr; }
   .fact-card { border-left: none; border-top: 2px solid var(--ink); padding: 1.6rem 0; }
   .fact-card:first-child { border-top: none; }
+  .fact-card__img { width: 100%; margin: 0 0 1.2rem; }
 }
 
 /* ---------- CONTACT ---------- */
@@ -544,7 +563,8 @@ main > section {
 @media (max-width: 820px) {
   .hero__row { grid-template-columns: 1fr; }
   .hero__photo { justify-self: start; order: -1; margin-bottom: 1rem; width: min(220px, 55vw); }
-  .hero__name-last { margin-left: clamp(0.8rem, 10vw, 2rem); }
+  .hero__name { font-size: clamp(2.2rem, 12vw, 4.5rem); }
+  .hero__name-last { margin-left: clamp(0.6rem, 8vw, 1.5rem); }
   .timeline__item { grid-template-columns: 1fr; }
   .timeline__when { padding-top: 0; }
   .nav__links { gap: 1rem; font-size: 0.85rem; }
